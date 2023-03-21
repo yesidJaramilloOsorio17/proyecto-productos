@@ -38,11 +38,12 @@
   
   li {
     list-style: none;
-    border: 1px solid grey;
+    border: 3px solid rgb(122, 122, 122);
     margin: 1rem auto;
     padding: 2rem;
     background-color:rgb(236, 236, 240);
     border-radius: 10px;
+    box-shadow:15px 15px 15px rgba(3, 3, 3, 0.384);
   }
   li > h4 {
     font-weight: 400;
@@ -61,9 +62,9 @@
    .ch{
     display: flex;
     gap: .5rem;
-    border: 1px solid;
     align-items: center;
     border-radius: 10px;
+    border: 2px solid rgb(122, 122, 122);
    }
    .ch1{
     display: flex;
@@ -87,6 +88,11 @@
     color: white;
     border: none;
    }
+   .products:hover {
+    transform: translateY(-4px);
+    background-color: #0303ac;
+    
+  }
    .eliminar{
     display: flex;
     flex-direction: column;
@@ -98,6 +104,11 @@
     border-radius: 10px;
     border: none;
    }
+   .eliminar:hover {
+    transform: translateY(-4px);
+    
+    background-color: rgb(247, 2, 2);
+  }
    .editar{
     display: flex;
     flex-direction: column;
@@ -107,6 +118,11 @@
     border: none;
     background-color: rgb(199, 199, 199);
    }
+   .editar:hover {
+    transform: translateY(-4px);
+    background-color: #9191a6;
+  
+  }
    .agregar{
     padding: 10px;
     display: flex;
@@ -117,7 +133,14 @@
     border-radius: 10px;
     font-size: 20px;
     color: white;
+    
    }
+   
+.agregar:hover {
+  transform: translateY(-4px);
+  background-color: #9191a6;
+
+}
 
    @media (max-width: 768px) {
 .caja-principal {
